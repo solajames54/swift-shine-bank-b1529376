@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "type": "Checking",
+    "accountNumber": "4782019365",
+    "balance": 18450.68,
+    "currency": "USD"
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "type": "Savings",
+    "accountNumber": "4782019366",
+    "balance": 6366.75,
+    "currency": "USD"
+  },
+  {
+    "id": 3,
+    "userId": 2,
+    "type": "Checking",
+    "accountNumber": "6139024781",
+    "balance": 5890.12,
+    "currency": "USD"
+  },
+  {
+    "id": 4,
+    "userId": 2,
+    "type": "Savings",
+    "accountNumber": "6139024782",
+    "balance": 2344.00,
+    "currency": "USD"
+  }
+]
