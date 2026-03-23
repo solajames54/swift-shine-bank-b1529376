@@ -1,5 +1,5 @@
 import { Shield } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const footerSections = [
   {
@@ -47,11 +47,27 @@ const footerSections = [
   },
 ];
 
+function ScrollToTopLink({ to, className, children }: { to: string; className?: string; children: React.ReactNode }) {
+  const navigate = useNavigate();
+  return (
+    <a
+      href={to}
+      className={className}
+      onClick={(e) => {
+        e.preventDefault();
+        navigate(to);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+    >
+      {children}
+    </a>
+  );
+}
+
 export function Footer() {
   return (
     <footer className="border-t bg-foreground text-background py-16">
       <div className="container mx-auto px-4">
-        {/* Brand + top links */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-12 pb-10 border-b border-background/10">
           <div className="max-w-xs">
             <Link to="/" className="flex items-center gap-2 font-bold text-lg mb-4">
@@ -65,14 +81,13 @@ export function Footer() {
             </p>
           </div>
           <div className="flex flex-wrap gap-6 text-sm">
-            <Link to="#features" className="opacity-60 hover:opacity-100 transition-opacity">Features</Link>
-            <Link to="#pricing" className="opacity-60 hover:opacity-100 transition-opacity">Pricing</Link>
-            <Link to="#security" className="opacity-60 hover:opacity-100 transition-opacity">Security</Link>
-            <Link to="#testimonials" className="opacity-60 hover:opacity-100 transition-opacity">Testimonials</Link>
+            <a href="#features" className="opacity-60 hover:opacity-100 transition-opacity">Features</a>
+            <a href="#pricing" className="opacity-60 hover:opacity-100 transition-opacity">Pricing</a>
+            <a href="#security" className="opacity-60 hover:opacity-100 transition-opacity">Security</a>
+            <a href="#testimonials" className="opacity-60 hover:opacity-100 transition-opacity">Testimonials</a>
           </div>
         </div>
 
-        {/* Mega footer links */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
           {footerSections.map((section) => (
             <div key={section.title}>
@@ -80,9 +95,9 @@ export function Footer() {
               <ul className="space-y-2.5">
                 {section.links.map((link) => (
                   <li key={link.to}>
-                    <Link to={link.to} className="text-sm opacity-60 hover:opacity-100 transition-opacity">
+                    <ScrollToTopLink to={link.to} className="text-sm opacity-60 hover:opacity-100 transition-opacity">
                       {link.label}
-                    </Link>
+                    </ScrollToTopLink>
                   </li>
                 ))}
               </ul>
@@ -90,13 +105,12 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Bottom bar */}
         <div className="border-t border-background/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs opacity-50">
           <p>© {new Date().getFullYear()} VaultBank. All rights reserved. This is a demo project.</p>
           <div className="flex gap-4">
-            <Link to="/resources/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
-            <Link to="/resources/terms-of-service" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
-            <Link to="/resources/cookie-policy" className="hover:opacity-100 transition-opacity">Cookie Policy</Link>
+            <ScrollToTopLink to="/resources/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</ScrollToTopLink>
+            <ScrollToTopLink to="/resources/terms-of-service" className="hover:opacity-100 transition-opacity">Terms of Service</ScrollToTopLink>
+            <ScrollToTopLink to="/resources/cookie-policy" className="hover:opacity-100 transition-opacity">Cookie Policy</ScrollToTopLink>
           </div>
         </div>
       </div>
