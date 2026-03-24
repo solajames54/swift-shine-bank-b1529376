@@ -88,7 +88,6 @@ export function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center gap-2">
-          <ThemeToggle />
           <Button variant="ghost" size="sm" asChild className={isLanding ? "text-white/70 hover:text-white hover:bg-white/10" : ""}>
             <Link to="/login">Log in</Link>
           </Button>
