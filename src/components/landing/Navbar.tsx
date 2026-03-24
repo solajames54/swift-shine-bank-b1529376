@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Shield, ChevronDown } from "lucide-react";
@@ -25,24 +25,33 @@ const navLinks = [
       { label: "Best ETFs", to: "/resources/best-etfs" },
     ],
   },
-  { label: "Pricing", href: "#pricing" },
   { label: "Security", href: "#security" },
 ];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isLanding = location.pathname === "/";
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const isTransparent = isLanding && !scrolled;
+
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors ${isLanding ? "bg-transparent" : "bg-background/80 backdrop-blur-xl border-b border-border/50"}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isTransparent ? "bg-transparent" : "bg-background/95 backdrop-blur-xl border-b border-border/50 shadow-sm"}`}>
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-xl tracking-tight">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
             <Shield className="h-4 w-4 text-primary-foreground" />
           </div>
-          <span className={isLanding ? "text-[hsl(var(--hero-fg))]" : ""}>VaultBank</span>
+          <span className={isTransparent ? "text-white" : "text-foreground"}> VaultBank</span>
         </Link>
 
         <div className="hidden lg:flex items-center gap-1">
@@ -54,7 +63,7 @@ export function Navbar() {
                 onMouseEnter={() => setActiveDropdown(l.label)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors rounded-lg hover:bg-foreground/5 ${isLanding ? "text-white/70 hover:text-white hover:bg-white/10" : "text-muted-foreground hover:text-foreground"}`}>
+                <button className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors rounded-lg ${isTransparent ? "text-white/70 hover:text-white hover:bg-white/10" : "text-muted-foreground hover:text-foreground hover:bg-secondary"}`}>
                   {l.label}
                   <ChevronDown className="h-3.5 w-3.5" />
                 </button>
@@ -79,7 +88,7 @@ export function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className={`px-3 py-2 text-sm font-medium transition-colors rounded-lg hover:bg-foreground/5 ${isLanding ? "text-white/70 hover:text-white hover:bg-white/10" : "text-muted-foreground hover:text-foreground"}`}
+                className={`px-3 py-2 text-sm font-medium transition-colors rounded-lg ${isTransparent ? "text-white/70 hover:text-white hover:bg-white/10" : "text-muted-foreground hover:text-foreground hover:bg-secondary"}`}
               >
                 {l.label}
               </a>
@@ -88,7 +97,7 @@ export function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center gap-2">
-          <Button variant="ghost" size="sm" asChild className={isLanding ? "text-white/70 hover:text-white hover:bg-white/10" : ""}>
+          <Button variant="ghost" size="sm" asChild className={isTransparent ? "text-white/70 hover:text-white hover:bg-white/10" : ""}>
             <Link to="/login">Log in</Link>
           </Button>
           <Button variant="hero" size="sm" asChild>
@@ -97,9 +106,8 @@ export function Navbar() {
         </div>
 
         <div className="flex lg:hidden items-center gap-1">
-          
           <button className="p-2" onClick={() => setOpen(!open)}>
-            {open ? <X className={`h-5 w-5 ${isLanding ? "text-white" : ""}`} /> : <Menu className={`h-5 w-5 ${isLanding ? "text-white" : ""}`} />}
+            {open ? <X className={`h-5 w-5 ${isTransparent ? "text-white" : ""}`} /> : <Menu className={`h-5 w-5 ${isTransparent ? "text-white" : ""}`} />}
           </button>
         </div>
       </div>

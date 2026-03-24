@@ -42,26 +42,31 @@ export function SecuritySection() {
           </ScrollReveal>
 
           <ScrollReveal direction="right">
-            <div className="relative rounded-2xl gradient-primary p-8 text-primary-foreground">
-              <div className="space-y-6">
-                <Shield className="h-12 w-12 opacity-90" />
-                <h3 className="text-2xl font-bold">Bank-grade protection for every account</h3>
-                <p className="opacity-80 leading-relaxed">
-                  Your deposits are insured up to $250,000 through our banking partners. 
-                  We never share your data with third parties.
+            <div className="relative rounded-2xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
+                alt="Secure digital banking"
+                className="w-full h-80 object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <h3 className="text-2xl font-bold mb-2">Bank-grade protection</h3>
+                <p className="text-white/70 text-sm leading-relaxed mb-4">
+                  Your deposits are insured up to $250,000. We never share your data with third parties.
                 </p>
                 <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/20">
                   <div>
                     <p className="text-2xl font-bold">0</p>
-                    <p className="text-xs opacity-70">Fraud incidents</p>
+                    <p className="text-xs text-white/60">Fraud incidents</p>
                   </div>
                   <div>
                     <p className="text-2xl font-bold">24/7</p>
-                    <p className="text-xs opacity-70">Monitoring</p>
+                    <p className="text-xs text-white/60">Monitoring</p>
                   </div>
                   <div>
                     <p className="text-2xl font-bold">SOC2</p>
-                    <p className="text-xs opacity-70">Certified</p>
+                    <p className="text-xs text-white/60">Certified</p>
                   </div>
                 </div>
               </div>
@@ -70,13 +75,5 @@ export function SecuritySection() {
         </div>
       </div>
     </section>
-  );
-}
-
-function Shield(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
-    </svg>
   );
 }
