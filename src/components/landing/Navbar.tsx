@@ -97,7 +97,7 @@ export function Navbar() {
         </div>
 
         <div className="flex lg:hidden items-center gap-1">
-          <ThemeToggle />
+          
           <button className="p-2" onClick={() => setOpen(!open)}>
             {open ? <X className={`h-5 w-5 ${isLanding ? "text-white" : ""}`} /> : <Menu className={`h-5 w-5 ${isLanding ? "text-white" : ""}`} />}
           </button>
