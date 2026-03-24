@@ -82,7 +82,6 @@ export function Footer() {
           </div>
           <div className="flex flex-wrap gap-6 text-sm">
             <a href="#features" className="opacity-60 hover:opacity-100 transition-opacity">Features</a>
-            <a href="#pricing" className="opacity-60 hover:opacity-100 transition-opacity">Pricing</a>
             <a href="#security" className="opacity-60 hover:opacity-100 transition-opacity">Security</a>
             <a href="#testimonials" className="opacity-60 hover:opacity-100 transition-opacity">Testimonials</a>
           </div>
