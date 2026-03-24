@@ -92,7 +92,7 @@ export function Navbar() {
             <Link to="/login">Log in</Link>
           </Button>
           <Button variant="hero" size="sm" asChild>
-            <Link to="/login">Get Started 👋</Link>
+            <Link to="/login">Get Started</Link>
           </Button>
         </div>
 
