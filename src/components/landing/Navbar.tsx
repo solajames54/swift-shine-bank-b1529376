@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X, Shield, ChevronDown } from "lucide-react";
 
 const navLinks = [
@@ -89,7 +88,6 @@ export function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center gap-2">
-          <ThemeToggle />
           <Button variant="ghost" size="sm" asChild className={isLanding ? "text-white/70 hover:text-white hover:bg-white/10" : ""}>
             <Link to="/login">Log in</Link>
           </Button>
@@ -99,7 +97,7 @@ export function Navbar() {
         </div>
 
         <div className="flex lg:hidden items-center gap-1">
-          <ThemeToggle />
+          
           <button className="p-2" onClick={() => setOpen(!open)}>
             {open ? <X className={`h-5 w-5 ${isLanding ? "text-white" : ""}`} /> : <Menu className={`h-5 w-5 ${isLanding ? "text-white" : ""}`} />}
           </button>
