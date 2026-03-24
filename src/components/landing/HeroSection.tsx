@@ -1,29 +1,36 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { ArrowRight, ArrowDown, TrendingUp, CreditCard, Shield } from "lucide-react";
-import { formatCurrency } from "@/utils/format";
+import { ArrowRight, ArrowDown } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden hero-section">
-      {/* Subtle background glow */}
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+      {/* Background image */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] rounded-full bg-primary/8 blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/3 w-[400px] h-[400px] rounded-full bg-accent/6 blur-[100px]" />
+        <img
+          src={heroBg}
+          alt="People using modern banking technology"
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
       </div>
 
       <div className="container mx-auto px-4 pt-24">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <ScrollReveal>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white/60 mb-8">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-1.5 text-sm text-white/60 mb-8">
               <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
               Trusted by 2M+ customers worldwide
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={80}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6 text-white">
               Your trusted{" "}
               <span className="gradient-text">banking</span>
               <br />
@@ -32,8 +39,8 @@ export function HeroSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={160}>
-            <p className="text-lg md:text-xl text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
-              We deliver instant transfers, smart analytics, and bank-grade 
+            <p className="text-lg md:text-xl text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
+              We deliver instant transfers, smart analytics, and bank-grade
               security to make the most impact on your finances.
             </p>
           </ScrollReveal>
@@ -59,7 +66,7 @@ export function HeroSection() {
               { value: "150+", label: "Countries supported" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-2xl md:text-3xl font-bold">{stat.value}</p>
+                <p className="text-2xl md:text-3xl font-bold text-white">{stat.value}</p>
                 <p className="text-sm text-white/40">{stat.label}</p>
               </div>
             ))}
