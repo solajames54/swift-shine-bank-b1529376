@@ -43,7 +43,7 @@ export default function DashboardLayout() {
               <div className="flex h-7 w-7 items-center justify-center rounded-lg gradient-primary">
                 <Shield className="h-3.5 w-3.5 text-primary-foreground" />
               </div>
-              VaultBank
+              AlliantCred Union
             </Link>
           )}
           <button

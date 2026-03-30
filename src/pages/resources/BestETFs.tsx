@@ -3,9 +3,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { TrendingUp, Check } from "lucide-react";
 
 const etfs = [
-  { name: "VaultBank Total Market ETF", ticker: "VBTM", expense: "0.02%", assets: "$48B", return1y: "+18.2%" },
-  { name: "VaultBank International ETF", ticker: "VBIX", expense: "0.06%", assets: "$12B", return1y: "+9.7%" },
-  { name: "VaultBank Clean Energy ETF", ticker: "VBCE", expense: "0.12%", assets: "$3.2B", return1y: "+24.5%" },
+  { name: "AlliantCred Union Total Market ETF", ticker: "VBTM", expense: "0.02%", assets: "$48B", return1y: "+18.2%" },
+  { name: "AlliantCred Union International ETF", ticker: "VBIX", expense: "0.06%", assets: "$12B", return1y: "+9.7%" },
+  { name: "AlliantCred Union Clean Energy ETF", ticker: "VBCE", expense: "0.12%", assets: "$3.2B", return1y: "+24.5%" },
 ];
 
 export default function BestETFs() {

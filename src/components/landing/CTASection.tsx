@@ -21,7 +21,7 @@ export function CTASection() {
               Ready to take control of your finances?
             </h2>
             <p className="text-lg text-white/60 mb-10 max-w-xl mx-auto">
-              Join over 2 million people who trust VaultBank for smarter, faster, 
+              Join over 2 million people who trust AlliantCred Union for smarter, faster, 
               and more secure banking. Open your free account today.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

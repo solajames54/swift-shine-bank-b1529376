@@ -4,7 +4,7 @@ import { BarChart3, Star, Check } from "lucide-react";
 
 const brokers = [
   {
-    name: "VaultBank Invest",
+    name: "AlliantCred Union Invest",
     rating: "4.9",
     commission: "$0",
     min: "$0",

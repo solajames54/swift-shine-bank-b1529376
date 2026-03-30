@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Elena Vasquez",
     role: "Freelance Designer",
-    text: "VaultBank completely changed how I manage my freelance income. The analytics are incredible — I finally understand where my money goes.",
+    text: "AlliantCred Union completely changed how I manage my freelance income. The analytics are incredible — I finally understand where my money goes.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
   },

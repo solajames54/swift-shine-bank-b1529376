@@ -39,7 +39,7 @@ export default function CardsPage() {
               <div className="flex items-center justify-between relative z-10">
                 <div className="flex items-center gap-2">
                   <Shield className="h-5 w-5 opacity-80" />
-                  <span className="text-sm font-medium opacity-90">VaultBank</span>
+                  <span className="text-sm font-medium opacity-90">AlliantCred Union</span>
                 </div>
                 <Wifi className="h-5 w-5 opacity-70" />
               </div>

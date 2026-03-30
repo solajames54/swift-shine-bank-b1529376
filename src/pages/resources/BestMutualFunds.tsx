@@ -3,9 +3,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { TrendingUp, BarChart3, Shield } from "lucide-react";
 
 const funds = [
-  { name: "VaultBank S&P 500 Index", ticker: "VBSPX", expense: "0.03%", return5y: "12.4%", risk: "Moderate" },
-  { name: "VaultBank Total Bond Market", ticker: "VBTBM", expense: "0.05%", return5y: "4.2%", risk: "Low" },
-  { name: "VaultBank Growth Fund", ticker: "VBGRF", expense: "0.08%", return5y: "15.1%", risk: "High" },
+  { name: "AlliantCred Union S&P 500 Index", ticker: "VBSPX", expense: "0.03%", return5y: "12.4%", risk: "Moderate" },
+  { name: "AlliantCred Union Total Bond Market", ticker: "VBTBM", expense: "0.05%", return5y: "4.2%", risk: "Low" },
+  { name: "AlliantCred Union Growth Fund", ticker: "VBGRF", expense: "0.08%", return5y: "15.1%", risk: "High" },
 ];
 
 export default function BestMutualFunds() {

@@ -1,7 +1,7 @@
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 const stats = [
-  { value: "2M+", label: "Active Users", description: "Trust VaultBank daily" },
+  { value: "2M+", label: "Active Users", description: "Trust AlliantCred Union daily" },
   { value: "$4.2B", label: "Processed", description: "In secure transactions" },
   { value: "150+", label: "Countries", description: "Worldwide coverage" },
   { value: "99.99%", label: "Uptime", description: "Guaranteed availability" },

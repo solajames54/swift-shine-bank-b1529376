@@ -3,8 +3,8 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { Check } from "lucide-react";
 
 const loans = [
-  { name: "VaultBank Personal Loan", apr: "6.99% – 14.99%", amounts: "$1,000 – $50,000", terms: "12 – 60 months", features: ["No origination fee", "Fixed rates", "Same-day funding available"] },
-  { name: "VaultBank Debt Consolidation", apr: "7.49% – 15.99%", amounts: "$5,000 – $100,000", terms: "24 – 84 months", features: ["Direct creditor payment", "Lower monthly payments", "Single payment simplicity"] },
+  { name: "AlliantCred Union Personal Loan", apr: "6.99% – 14.99%", amounts: "$1,000 – $50,000", terms: "12 – 60 months", features: ["No origination fee", "Fixed rates", "Same-day funding available"] },
+  { name: "AlliantCred Union Debt Consolidation", apr: "7.49% – 15.99%", amounts: "$5,000 – $100,000", terms: "24 – 84 months", features: ["Direct creditor payment", "Lower monthly payments", "Single payment simplicity"] },
 ];
 
 export default function BestPersonalLoans() {

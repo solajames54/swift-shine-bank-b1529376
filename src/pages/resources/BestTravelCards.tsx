@@ -4,19 +4,19 @@ import { Plane, Star, Check, Globe } from "lucide-react";
 
 const cards = [
   {
-    name: "VaultBank Travel Elite",
+    name: "AlliantCred Union Travel Elite",
     highlight: "5x points on flights & hotels",
     annual: "$95",
     features: ["5x points on travel purchases", "Airport lounge access (1,300+ lounges)", "No foreign transaction fees", "Trip cancellation insurance", "$200 annual travel credit"],
   },
   {
-    name: "VaultBank World Explorer",
+    name: "AlliantCred Union World Explorer",
     highlight: "3x points on all travel & dining",
     annual: "$0",
     features: ["3x points on travel & dining", "No annual fee", "No foreign transaction fees", "Auto rental collision coverage", "Travel emergency assistance"],
   },
   {
-    name: "VaultBank Premium Reserve",
+    name: "AlliantCred Union Premium Reserve",
     highlight: "10x points on hotels",
     annual: "$450",
     features: ["10x on hotel bookings", "5x on flights", "Global Entry/TSA PreCheck credit", "Priority Pass membership", "$300 annual travel credit", "Concierge service"],
