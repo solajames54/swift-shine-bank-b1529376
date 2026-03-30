@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Shield, ArrowRight, Eye, EyeOff } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoImg from "/logo.png";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -38,9 +39,7 @@ export default function LoginPage() {
       {/* Left panel */}
       <div className="hidden lg:flex flex-1 gradient-primary items-center justify-center p-12">
         <div className="max-w-md text-primary-foreground">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 mb-8">
-            <Shield className="h-6 w-6" />
-          </div>
+          <img src={logoImg} alt="AlliantCred Union" className="h-20 w-20 rounded-lg" />
           <h2 className="text-3xl font-bold mb-4">Welcome back to AlliantCred Union</h2>
           <p className="opacity-80 leading-relaxed">
             Access your accounts, track spending, and manage your finances — all in one secure place.
@@ -53,7 +52,7 @@ export default function LoginPage() {
         <div className="w-full max-w-sm">
           <Link to="/" className="flex items-center gap-2 font-bold text-xl mb-10 lg:hidden">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
-              <Shield className="h-4 w-4 text-primary-foreground" />
+              <img src={logoImg} alt="AlliantCred Union" className="h-20 w-20 rounded-lg" />
             </div>
             AlliantCred Union
           </Link>
@@ -66,7 +65,7 @@ export default function LoginPage() {
               <label className="text-sm font-medium mb-1.5 block">Email</label>
               <Input
                 type="email"
-                placeholder="sarah@vaultbank.com"
+                placeholder="sarah@alliantcu.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required

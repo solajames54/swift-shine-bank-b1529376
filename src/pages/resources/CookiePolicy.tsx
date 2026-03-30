@@ -44,7 +44,7 @@ export default function CookiePolicy() {
         <ScrollReveal>
           <div className="rounded-2xl border bg-card p-6">
             <h2 className="text-xl font-bold mb-2">Managing your cookies</h2>
-            <p className="text-sm text-muted-foreground leading-relaxed">You can control cookies through your browser settings. Most browsers allow you to block or delete cookies. However, blocking essential cookies may prevent you from using AlliantCred Union's services. For questions about our cookie practices, contact privacy@vaultbank.com.</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">You can control cookies through your browser settings. Most browsers allow you to block or delete cookies. However, blocking essential cookies may prevent you from using AlliantCred Union's services. For questions about our cookie practices, contact privacy@alliantcu.com.</p>
           </div>
         </ScrollReveal>
       </div>

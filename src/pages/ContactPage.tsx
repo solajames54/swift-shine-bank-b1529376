@@ -63,10 +63,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
                     <a
-                      href="mailto:support@vaultbank.com"
+                      href="mailto:support@alliantcu.com"
                       className="text-primary hover:underline"
                     >
-                      support@vaultbank.com
+                      support@alliantcu.com
                     </a>
                   </div>
                 </div>

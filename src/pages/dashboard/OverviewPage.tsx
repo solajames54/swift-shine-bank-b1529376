@@ -70,8 +70,8 @@ export default function OverviewPage() {
       {/* Stats */}
       <div className="grid sm:grid-cols-3 gap-4">
         {[
-          { label: "Total Balance", value: totalBalance, icon: TrendingUp, trend: "+12.5%", color: "text-primary" },
-          { label: "Income", value: income, icon: ArrowUpRight, trend: "+8.2%", color: "text-success" },
+          { label: "Total Balance", value: totalBalance, icon: TrendingUp, trend: "+72.5%", color: "text-primary" },
+          { label: "Income", value: income, icon: ArrowUpRight, trend: "+72.2%", color: "text-success" },
           { label: "Expenses", value: expenses, icon: ArrowDownRight, trend: "-3.1%", color: "text-destructive" },
         ].map((s, i) => (
           <ScrollReveal key={s.label} delay={i * 80}>

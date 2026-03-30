@@ -2,17 +2,17 @@
   {
     "id": 1,
     "name": "Adam Richardson",
-    "email": "adam@vaultbank.com",
+    "email": "adam@alliantcu.com",
     "password": "adamRich2026",
     "accountNumber": "4782019365",
-    "balance": 24817.43,
+    "balance": 76817.43,
     "phone": "+1 (555) 842-9103",
     "joinDate": "2024-08-15"
   },
   {
     "id": 2,
     "name": "Marcus Rivera",
-    "email": "marcus@vaultbank.com",
+    "email": "marcus@alliantcu.com",
     "password": "password",
     "accountNumber": "6139024781",
     "balance": 8234.12,

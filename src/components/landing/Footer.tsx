@@ -71,7 +71,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-12 pb-10 border-b border-background/10">
           <div className="max-w-xs">
             <Link to="/" className="flex items-center gap-2 font-bold text-lg mb-4">
-              <img src={logoImg} alt="AlliantCred Union" className="h-10 w-10 rounded-lg" />
+              <img src={logoImg} alt="AlliantCred Union" className="h-20 w-20 rounded-lg" />
               AlliantCred Union
             </Link>
             <p className="text-sm opacity-60 leading-relaxed">

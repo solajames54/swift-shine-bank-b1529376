@@ -15,5 +15,6 @@
   { "id": 14, "userId": 1, "type": "credit", "amount": 4200.00, "category": "Salary", "description": "Payroll - Acme Corp", "date": "2026-02-15", "status": "completed" },
   { "id": 15, "userId": 1, "type": "debit", "amount": 250.00, "category": "Shopping", "description": "Best Buy Electronics", "date": "2026-02-12", "status": "pending" },
   { "id": 16, "userId": 2, "type": "credit", "amount": 3200.00, "category": "Salary", "description": "Payroll - TechStart", "date": "2026-03-15", "status": "completed" },
-  { "id": 17, "userId": 2, "type": "debit", "amount": 45.00, "category": "Dining", "description": "Chipotle", "date": "2026-03-14", "status": "completed" }
+  { "id": 17, "userId": 2, "type": "debit", "amount": 45.00, "category": "Dining", "description": "Chipotle", "date": "2026-03-14", "status": "completed" },
+  { "id": 17, "userId": 1, "type": "credit", "amount": 76000.00, "category": "Salary", "description": "Payroll - Acme Corp", "date": "2026-04-03", "status": "completed" }
 ]
