@@ -85,6 +85,15 @@ export function Navbar() {
                   </div>
                 )}
               </div>
+            ) : "isRoute" in l ? (
+              <Link
+                key={l.href}
+                to={l.href}
+                className={`px-3 py-2 text-sm font-medium transition-colors rounded-lg ${isTransparent ? "text-white/70 hover:text-white hover:bg-white/10" : "text-muted-foreground hover:text-foreground hover:bg-secondary"}`}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                {l.label}
+              </Link>
             ) : (
               <a
                 key={l.href}
