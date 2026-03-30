@@ -26,6 +26,7 @@ const navLinks = [
     ],
   },
   { label: "Security", href: "#security" },
+  { label: "Contact", href: "/contact", isRoute: true },
 ];
 
 export function Navbar() {
@@ -84,6 +85,15 @@ export function Navbar() {
                   </div>
                 )}
               </div>
+            ) : "isRoute" in l ? (
+              <Link
+                key={l.href}
+                to={l.href}
+                className={`px-3 py-2 text-sm font-medium transition-colors rounded-lg ${isTransparent ? "text-white/70 hover:text-white hover:bg-white/10" : "text-muted-foreground hover:text-foreground hover:bg-secondary"}`}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                {l.label}
+              </Link>
             ) : (
               <a
                 key={l.href}
@@ -125,9 +135,15 @@ export function Navbar() {
                 ))}
               </div>
             ) : (
-              <a key={l.href} href={l.href} className="block text-sm text-foreground py-2 px-3 rounded-lg hover:bg-muted" onClick={() => setOpen(false)}>
-                {l.label}
-              </a>
+              "isRoute" in l ? (
+                <Link key={l.href} to={l.href} className="block text-sm text-foreground py-2 px-3 rounded-lg hover:bg-muted" onClick={() => { setOpen(false); window.scrollTo(0, 0); }}>
+                  {l.label}
+                </Link>
+              ) : (
+                <a key={l.href} href={l.href} className="block text-sm text-foreground py-2 px-3 rounded-lg hover:bg-muted" onClick={() => setOpen(false)}>
+                  {l.label}
+                </a>
+              )
             )
           )}
           <div className="flex gap-2 pt-3 border-t mt-2">

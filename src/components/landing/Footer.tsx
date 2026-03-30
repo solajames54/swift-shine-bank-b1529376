@@ -110,6 +110,7 @@ export function Footer() {
             <ScrollToTopLink to="/resources/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</ScrollToTopLink>
             <ScrollToTopLink to="/resources/terms-of-service" className="hover:opacity-100 transition-opacity">Terms of Service</ScrollToTopLink>
             <ScrollToTopLink to="/resources/cookie-policy" className="hover:opacity-100 transition-opacity">Cookie Policy</ScrollToTopLink>
+            <ScrollToTopLink to="/contact" className="hover:opacity-100 transition-opacity">Contact Us</ScrollToTopLink>
           </div>
         </div>
       </div>

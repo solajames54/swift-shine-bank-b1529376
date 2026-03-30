@@ -41,6 +41,7 @@ import DebtManagement from "./pages/resources/DebtManagement";
 import PrivacyPolicy from "./pages/resources/PrivacyPolicy";
 import TermsOfService from "./pages/resources/TermsOfService";
 import CookiePolicy from "./pages/resources/CookiePolicy";
+import ContactPage from "./pages/ContactPage";
 
 const queryClient = new QueryClient();
 
@@ -87,6 +88,7 @@ const App = () => (
             <Route path="/resources/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/resources/terms-of-service" element={<TermsOfService />} />
             <Route path="/resources/cookie-policy" element={<CookiePolicy />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
