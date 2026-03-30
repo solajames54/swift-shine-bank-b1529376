@@ -26,6 +26,7 @@ const navLinks = [
     ],
   },
   { label: "Security", href: "#security" },
+  { label: "Contact", href: "/contact", isRoute: true },
 ];
 
 export function Navbar() {
