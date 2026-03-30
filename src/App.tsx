@@ -41,6 +41,7 @@ import DebtManagement from "./pages/resources/DebtManagement";
 import PrivacyPolicy from "./pages/resources/PrivacyPolicy";
 import TermsOfService from "./pages/resources/TermsOfService";
 import CookiePolicy from "./pages/resources/CookiePolicy";
+import ContactPage from "./pages/ContactPage";
 
 const queryClient = new QueryClient();
 
