@@ -135,9 +135,15 @@ export function Navbar() {
                 ))}
               </div>
             ) : (
-              <a key={l.href} href={l.href} className="block text-sm text-foreground py-2 px-3 rounded-lg hover:bg-muted" onClick={() => setOpen(false)}>
-                {l.label}
-              </a>
+              "isRoute" in l ? (
+                <Link key={l.href} to={l.href} className="block text-sm text-foreground py-2 px-3 rounded-lg hover:bg-muted" onClick={() => { setOpen(false); window.scrollTo(0, 0); }}>
+                  {l.label}
+                </Link>
+              ) : (
+                <a key={l.href} href={l.href} className="block text-sm text-foreground py-2 px-3 rounded-lg hover:bg-muted" onClick={() => setOpen(false)}>
+                  {l.label}
+                </a>
+              )
             )
           )}
           <div className="flex gap-2 pt-3 border-t mt-2">
