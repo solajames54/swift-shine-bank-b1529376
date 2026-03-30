@@ -50,7 +50,7 @@ export function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isTransparent ? "bg-transparent" : "bg-background/95 backdrop-blur-xl border-b border-border/50 shadow-sm"}`}>
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-xl tracking-tight">
-          <img src={logoImg} alt="AlliantCred Union" className="h-8 w-8 rounded-lg" />
+          <img src={logoImg} alt="AlliantCred Union" className="h-10 w-10 rounded-lg" />
           <span className={isTransparent ? "text-white" : "text-foreground"}>AlliantCred Union</span>
         </Link>
 
