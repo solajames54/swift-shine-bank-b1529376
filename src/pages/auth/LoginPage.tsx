@@ -41,7 +41,7 @@ export default function LoginPage() {
           <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 mb-8">
             <Shield className="h-6 w-6" />
           </div>
-          <h2 className="text-3xl font-bold mb-4">Welcome back to VaultBank</h2>
+          <h2 className="text-3xl font-bold mb-4">Welcome back to AlliantCred Union</h2>
           <p className="opacity-80 leading-relaxed">
             Access your accounts, track spending, and manage your finances — all in one secure place.
           </p>
@@ -55,7 +55,7 @@ export default function LoginPage() {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
               <Shield className="h-4 w-4 text-primary-foreground" />
             </div>
-            VaultBank
+            AlliantCred Union
           </Link>
 
           <h1 className="text-2xl font-bold mb-2">Sign in to your account</h1>

@@ -3,9 +3,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { Shield, TrendingUp, Percent, Landmark } from "lucide-react";
 
 const accounts = [
-  { name: "VaultBank High-Yield Savings", apy: "4.50%", min: "$0", icon: TrendingUp, highlight: true, desc: "No minimum balance. No monthly fees. Earn 10x the national average." },
-  { name: "VaultBank Money Market", apy: "4.25%", min: "$1,000", icon: Landmark, highlight: false, desc: "Higher rates for larger balances with check-writing privileges." },
-  { name: "VaultBank Kids Savings", apy: "3.75%", min: "$0", icon: Shield, highlight: false, desc: "Teach kids to save with parental controls and milestone rewards." },
+  { name: "AlliantCred Union High-Yield Savings", apy: "4.50%", min: "$0", icon: TrendingUp, highlight: true, desc: "No minimum balance. No monthly fees. Earn 10x the national average." },
+  { name: "AlliantCred Union Money Market", apy: "4.25%", min: "$1,000", icon: Landmark, highlight: false, desc: "Higher rates for larger balances with check-writing privileges." },
+  { name: "AlliantCred Union Kids Savings", apy: "3.75%", min: "$0", icon: Shield, highlight: false, desc: "Teach kids to save with parental controls and milestone rewards." },
 ];
 
 export default function BestSavingsAccounts() {

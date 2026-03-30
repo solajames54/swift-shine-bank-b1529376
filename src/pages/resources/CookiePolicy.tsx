@@ -16,7 +16,7 @@ export default function CookiePolicy() {
         <ScrollReveal>
           <div className="rounded-2xl border bg-card p-6">
             <h2 className="text-xl font-bold mb-2">What are cookies?</h2>
-            <p className="text-sm text-muted-foreground leading-relaxed">Cookies are small text files stored on your device when you visit a website. They help the site remember your preferences and understand how you use the service. VaultBank uses cookies to keep you securely logged in, remember your settings, and improve our services.</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">Cookies are small text files stored on your device when you visit a website. They help the site remember your preferences and understand how you use the service. AlliantCred Union uses cookies to keep you securely logged in, remember your settings, and improve our services.</p>
           </div>
         </ScrollReveal>
 
@@ -44,7 +44,7 @@ export default function CookiePolicy() {
         <ScrollReveal>
           <div className="rounded-2xl border bg-card p-6">
             <h2 className="text-xl font-bold mb-2">Managing your cookies</h2>
-            <p className="text-sm text-muted-foreground leading-relaxed">You can control cookies through your browser settings. Most browsers allow you to block or delete cookies. However, blocking essential cookies may prevent you from using VaultBank's services. For questions about our cookie practices, contact privacy@vaultbank.com.</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">You can control cookies through your browser settings. Most browsers allow you to block or delete cookies. However, blocking essential cookies may prevent you from using AlliantCred Union's services. For questions about our cookie practices, contact privacy@vaultbank.com.</p>
           </div>
         </ScrollReveal>
       </div>

@@ -4,7 +4,7 @@ import { Globe, Check, Star, Smartphone } from "lucide-react";
 
 const banks = [
   {
-    name: "VaultBank Digital",
+    name: "AlliantCred Union Digital",
     rating: "4.9",
     features: ["No monthly fees", "4.50% APY savings", "Free ATM network (55,000+)", "24/7 customer support"],
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=400&fit=crop",

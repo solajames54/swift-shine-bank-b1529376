@@ -74,7 +74,7 @@ export default function OTPPage() {
     setLoading(false);
 
     if (result.success) {
-      toast.success("Welcome to VaultBank!");
+      toast.success("Welcome to AlliantCred Union!");
       navigate("/dashboard");
     } else {
       setError(result.error || "Verification failed");

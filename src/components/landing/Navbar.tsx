@@ -52,7 +52,7 @@ export function Navbar() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
             <Shield className="h-4 w-4 text-primary-foreground" />
           </div>
-          <span className={isTransparent ? "text-white" : "text-foreground"}> VaultBank</span>
+          <span className={isTransparent ? "text-white" : "text-foreground"}> AlliantCred Union</span>
         </Link>
 
         <div className="hidden lg:flex items-center gap-1">

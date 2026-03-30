@@ -3,8 +3,8 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { Landmark, Check } from "lucide-react";
 
 const lenders = [
-  { name: "VaultBank Home Loans", rate: "6.25%", type: "30-Year Fixed", features: ["No lender fees", "Rate lock for 60 days", "Online application in 15 min", "First-time buyer programs"] },
-  { name: "VaultBank Refi", rate: "5.99%", type: "15-Year Fixed", features: ["Lower monthly payments", "Cash-out refinance available", "No appraisal fee", "Close in 21 days"] },
+  { name: "AlliantCred Union Home Loans", rate: "6.25%", type: "30-Year Fixed", features: ["No lender fees", "Rate lock for 60 days", "Online application in 15 min", "First-time buyer programs"] },
+  { name: "AlliantCred Union Refi", rate: "5.99%", type: "15-Year Fixed", features: ["Lower monthly payments", "Cash-out refinance available", "No appraisal fee", "Close in 21 days"] },
 ];
 
 export default function BestMortgageLenders() {

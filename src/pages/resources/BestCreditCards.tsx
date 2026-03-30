@@ -3,9 +3,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { CreditCard, Star, Check } from "lucide-react";
 
 const cards = [
-  { name: "VaultBank Rewards Card", type: "Cash Back", highlight: "3% back on dining & groceries", annual: "$0", features: ["No annual fee", "3% dining & groceries", "1.5% on everything else", "No foreign transaction fees"] },
-  { name: "VaultBank Travel Elite", type: "Travel", highlight: "5x points on travel", annual: "$95", features: ["5x points on flights & hotels", "Airport lounge access", "Travel insurance included", "$200 travel credit"] },
-  { name: "VaultBank Starter Card", type: "Student", highlight: "Build credit responsibly", annual: "$0", features: ["No credit history required", "1% cash back", "Free credit score monitoring", "Auto credit limit increases"] },
+  { name: "AlliantCred Union Rewards Card", type: "Cash Back", highlight: "3% back on dining & groceries", annual: "$0", features: ["No annual fee", "3% dining & groceries", "1.5% on everything else", "No foreign transaction fees"] },
+  { name: "AlliantCred Union Travel Elite", type: "Travel", highlight: "5x points on travel", annual: "$95", features: ["5x points on flights & hotels", "Airport lounge access", "Travel insurance included", "$200 travel credit"] },
+  { name: "AlliantCred Union Starter Card", type: "Student", highlight: "Build credit responsibly", annual: "$0", features: ["No credit history required", "1% cash back", "Free credit score monitoring", "Auto credit limit increases"] },
 ];
 
 export default function BestCreditCards() {

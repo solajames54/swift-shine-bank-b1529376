@@ -3,9 +3,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { CreditCard, Check } from "lucide-react";
 
 const accounts = [
-  { name: "VaultBank Essential Checking", fee: "Free", features: ["No minimum balance", "Free debit card", "Mobile check deposit", "2 free ATM withdrawals/month"] },
-  { name: "VaultBank Premium Checking", fee: "$9.99/mo", features: ["Unlimited ATM refunds", "Early paycheck (2 days)", "Overdraft protection", "Priority support", "Free cashier's checks"] },
-  { name: "VaultBank Student Checking", fee: "Free", features: ["No fees until age 25", "Budgeting tools", "Parental oversight option", "Free debit card"] },
+  { name: "AlliantCred Union Essential Checking", fee: "Free", features: ["No minimum balance", "Free debit card", "Mobile check deposit", "2 free ATM withdrawals/month"] },
+  { name: "AlliantCred Union Premium Checking", fee: "$9.99/mo", features: ["Unlimited ATM refunds", "Early paycheck (2 days)", "Overdraft protection", "Priority support", "Free cashier's checks"] },
+  { name: "AlliantCred Union Student Checking", fee: "Free", features: ["No fees until age 25", "Budgeting tools", "Parental oversight option", "Free debit card"] },
 ];
 
 export default function BestCheckingAccounts() {

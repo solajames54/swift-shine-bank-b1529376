@@ -5,7 +5,7 @@ import { PiggyBank, Target, TrendingDown, Lightbulb, Calculator } from "lucide-r
 const tips = [
   { icon: Target, title: "The 50/30/20 Rule", content: "Allocate 50% of income to needs (rent, groceries, utilities), 30% to wants (dining, entertainment), and 20% to savings and debt repayment. It's simple, flexible, and effective." },
   { icon: PiggyBank, title: "Automate your savings", content: "Set up automatic transfers to your savings account on payday. When saving is automatic, you spend what's left instead of saving what's left — a powerful mindset shift." },
-  { icon: TrendingDown, title: "Track every expense", content: "Use VaultBank's built-in analytics to categorize spending. Most people are surprised by how much they spend on subscriptions, coffee, and impulse purchases." },
+  { icon: TrendingDown, title: "Track every expense", content: "Use AlliantCred Union's built-in analytics to categorize spending. Most people are surprised by how much they spend on subscriptions, coffee, and impulse purchases." },
   { icon: Calculator, title: "Build a zero-based budget", content: "Assign every dollar a job. Income minus expenses should equal zero. This forces intentionality with your money and eliminates wasteful spending." },
   { icon: Lightbulb, title: "Use the 24-hour rule", content: "For any non-essential purchase over $50, wait 24 hours before buying. This simple delay eliminates most impulse purchases and can save thousands annually." },
 ];

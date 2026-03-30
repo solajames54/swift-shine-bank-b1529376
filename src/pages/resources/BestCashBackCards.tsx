@@ -4,19 +4,19 @@ import { CreditCard, Star, Check, DollarSign } from "lucide-react";
 
 const cards = [
   {
-    name: "VaultBank Cash Back Plus",
+    name: "AlliantCred Union Cash Back Plus",
     cashback: "5% rotating categories",
     annual: "$0",
     features: ["5% on quarterly rotating categories", "1% on all other purchases", "$200 welcome bonus", "No annual fee ever"],
   },
   {
-    name: "VaultBank Flat Rate Card",
+    name: "AlliantCred Union Flat Rate Card",
     cashback: "2% on everything",
     annual: "$0",
     features: ["2% cash back on all purchases", "No category tracking needed", "Automatic statement credits", "No minimum redemption"],
   },
   {
-    name: "VaultBank Grocery Rewards",
+    name: "AlliantCred Union Grocery Rewards",
     cashback: "6% on groceries",
     annual: "$95",
     features: ["6% at US supermarkets (up to $6K/yr)", "3% on streaming services", "3% on transit", "$300 annual grocery credit"],

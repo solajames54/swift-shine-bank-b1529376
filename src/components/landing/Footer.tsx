@@ -74,7 +74,7 @@ export function Footer() {
               <div className="flex h-7 w-7 items-center justify-center rounded-lg gradient-primary">
                 <Shield className="h-3.5 w-3.5 text-primary-foreground" />
               </div>
-              VaultBank
+              AlliantCred Union
             </Link>
             <p className="text-sm opacity-60 leading-relaxed">
               Modern banking for the digital age. Your money, your way. Trusted by over 2 million customers worldwide.
@@ -105,7 +105,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-background/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs opacity-50">
-          <p>© {new Date().getFullYear()} VaultBank. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AlliantCred Union. All rights reserved.</p>
           <div className="flex gap-4">
             <ScrollToTopLink to="/resources/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</ScrollToTopLink>
             <ScrollToTopLink to="/resources/terms-of-service" className="hover:opacity-100 transition-opacity">Terms of Service</ScrollToTopLink>
