@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Adam Richardson",
+    "email": "adam@vaultbank.com",
+    "password": "adamRich2026",
+    "accountNumber": "4782019365",
+    "balance": 24817.43,
+    "phone": "+1 (555) 842-9103",
+    "joinDate": "2024-08-15"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Rivera",
+    "email": "marcus@vaultbank.com",
+    "password": "password",
+    "accountNumber": "6139024781",
+    "balance": 8234.12,
+    "phone": "+1 (555) 217-4890",
+    "joinDate": "2025-01-22"
+  }
+]

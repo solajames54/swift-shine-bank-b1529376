@@ -1,0 +1,7 @@
+[
+  { "id": 1, "userId": 1, "type": "transaction", "title": "Payment Received", "message": "You received $4,200.00 from Acme Corp", "date": "2026-03-15T09:30:00", "read": false },
+  { "id": 2, "userId": 1, "type": "security", "title": "New Login Detected", "message": "A new login was detected from Chrome on macOS", "date": "2026-03-14T14:22:00", "read": false },
+  { "id": 3, "userId": 1, "type": "transaction", "title": "Payment Sent", "message": "You paid $67.32 to Whole Foods Market", "date": "2026-03-14T11:45:00", "read": true },
+  { "id": 4, "userId": 1, "type": "info", "title": "Statement Ready", "message": "Your February statement is now available", "date": "2026-03-01T08:00:00", "read": true },
+  { "id": 5, "userId": 1, "type": "security", "title": "OTP Verification", "message": "OTP code was used for login verification", "date": "2026-02-28T16:10:00", "read": true }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "type": "Virtual Debit",
+    "cardNumber": "4532 •••• •••• 4821",
+    "last4": "4821",
+    "expiry": "12/28",
+    "cvv": "***",
+    "frozen": false,
+    "limit": 5000,
+    "spent": 1847.30
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "type": "Physical Debit",
+    "cardNumber": "4532 •••• •••• 7293",
+    "last4": "7293",
+    "expiry": "09/27",
+    "cvv": "***",
+    "frozen": false,
+    "limit": 10000,
+    "spent": 3214.50
+  }
+]
