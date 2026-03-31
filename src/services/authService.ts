@@ -2,7 +2,7 @@ import usersData from "@/data/users.json";
 import type { User, AuthState } from "@/types";
 
 const AUTH_KEY = "vault_auth";
-const OTP_POOL: string[] = ["123456", "234567", "345678", "456789", "567890"];
+const OTP_POOL: string[] = ["123456", "234567", "345678", "456789", "567890", "497890", "567330"];
 
 export function getStoredAuth(): AuthState {
   try {
